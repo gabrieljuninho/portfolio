@@ -3,10 +3,10 @@ import localFont from "next/font/local";
 
 export const fontSans = FontSans({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-sans"
 });
 
 export const fontHeading = localFont({
   src: "../../styles/fonts/CalSans-SemiBold.woff2",
-  variable: "--font-heading",
+  variable: "--font-heading"
 });
