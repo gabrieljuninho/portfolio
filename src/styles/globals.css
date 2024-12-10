@@ -81,8 +81,22 @@
 }
 
 @layer base {
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+
   * {
     @apply border-border;
+  }
+
+  html,
+  body {
+    @apply h-full w-full overscroll-none;
   }
 
   body {
