@@ -3,3 +3,9 @@
 @theme {
   --font-inter: var(--font-inter);
 }
+
+@layer base {
+  body {
+    @apply text-zinc-800;
+  }
+}

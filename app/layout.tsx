@@ -8,6 +8,8 @@ import { cn } from "@/lib/utils";
 
 import SmoothScrollProvider from "@/components/providers/smooth-scroll-provider";
 
+import Transition from "@/features/transition";
+
 const inter = Inter({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -26,7 +28,9 @@ const RootLayout: FC<IRootLayoutProps> = ({ children }) => {
   return (
     <html lang="en">
       <body className={cn("font-inter antialiased", inter.variable)}>
-        <SmoothScrollProvider>{children}</SmoothScrollProvider>
+        <SmoothScrollProvider>
+          <Transition>{children}</Transition>
+        </SmoothScrollProvider>
       </body>
     </html>
   );
